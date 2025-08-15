@@ -4,6 +4,8 @@
 // ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION
 const dataBase = [];
 
+// const history = document.querySelector("#history");
+// history.value = dataBase.join(" "); // Display the contents of the database
 // function operateDataBase()
 
 function add(a, b) {
@@ -56,6 +58,14 @@ const btnDivide = document.querySelector("#divide");
 const btnEquals = document.querySelector("#equals");
 const btnDecimal = document.querySelector("#decimal");
 
+btnDecimal.addEventListener("click", () => {
+  console.log("Decimal Button Clicked");
+  const input = document.querySelector("#display");
+  if (!input.value.includes(".")) {
+    input.value += ".";
+  }
+});
+
 btnEquals.addEventListener("click", () => {
   console.log("Equals Button Clicked");
   const input = document.querySelector("#display");
@@ -85,6 +95,14 @@ btnAdd.addEventListener("click", () => {
 
 btnSubtract.addEventListener("click", () => {
   addButtonClick("-");
+});
+
+btnMultiply.addEventListener("click", () => {
+  addButtonClick("*");
+});
+
+btnDivide.addEventListener("click", () => {
+  addButtonClick("/");
 });
 
 btnOne.addEventListener("click", () => {
