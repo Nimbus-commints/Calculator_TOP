@@ -106,140 +106,57 @@ btnDivide.addEventListener("click", () => {
 });
 
 btnOne.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "1"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button One Clicked");
-
-  const input = document.querySelector("#display");
-  input.value += "1";
+  addBtnNumberClick("1");
 });
 
 btnTwo.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "2"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Two Clicked");
-  const input = document.querySelector("#display");
-  input.value += "2";
+  addBtnNumberClick("2");
 });
 
 btnThree.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "3"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Three Clicked");
-  const input = document.querySelector("#display");
-  input.value += "3";
+  addBtnNumberClick("3");
 });
 
 btnFour.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "4"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Four Clicked");
-  const input = document.querySelector("#display");
-  input.value += "4";
+  addBtnNumberClick("4");
 });
 
 btnFive.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "5"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Five Clicked");
-  const input = document.querySelector("#display");
-  input.value += "5";
+  addBtnNumberClick("5");
 });
 
 btnSix.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "6"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Six Clicked");
-  const input = document.querySelector("#display");
-  input.value += "6";
+  addBtnNumberClick("6");
 });
+
 btnSeven.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "7"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Seven Clicked");
-  const input = document.querySelector("#display");
-  input.value += "7";
+  addBtnNumberClick("7");
 });
+
 btnEight.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "8"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Eight Clicked");
-  const input = document.querySelector("#display");
-  input.value += "8";
+  addBtnNumberClick("8");
 });
+
 btnNine.addEventListener("click", () => {
-  if (dataBase.length === 1) {
-    dataBase.length = 0; // Clear the database if already one value
-    const input = document.querySelector("#display");
-    input.value = ""; // Clear the display
-    input.value += "9"; // Add '1' to the display
-    console.log("Database cleared, now adding '1' to display");
-    return;
-  }
-  console.log("Button Nine Clicked");
-  const input = document.querySelector("#display");
-  input.value += "9";
+  addBtnNumberClick("9");
 });
+
 btnZero.addEventListener("click", () => {
+  addBtnNumberClick("0");
+});
+
+function addBtnNumberClick(number) {
   if (dataBase.length === 1) {
     dataBase.length = 0; // Clear the database if already one value
     const input = document.querySelector("#display");
     input.value = ""; // Clear the display
-    input.value += "0"; // Add '1' to the display
+    input.value += number; // Add '1' to the display
     return;
   }
   console.log("Button Zero Clicked");
   const input = document.querySelector("#display");
-  input.value += "0";
-});
+  input.value += number;
+}
 
 function addButtonClick(operatorMath) {
   console.log("Add Button Clicked");
