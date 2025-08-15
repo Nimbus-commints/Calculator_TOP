@@ -3,10 +3,32 @@ button {
   width: 30px;
 }
 
-input {
-  height: 30px;
-  /* width: 100px; */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  /* padding: 5px; */
+}
+input[type="text"] {
+  box-sizing: border-box;
+  margin: 0px;
+  height: 50px;
+  /* flex-basis: 200px; */
+  width: 200px;
   font-size: 20px;
   text-align: right;
-  margin: 20px;
+  /* margin: 20px; */
+}
+
+.buttons {
+  /* flex: 1; */
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 150px; */
+
+  margin: 0px;
 }
